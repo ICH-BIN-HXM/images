@@ -28,13 +28,13 @@ while coords is None:
 
 pyautogui.typewrite('git pull')
 pyautogui.press('enter')
-pyautogui.sleep(2)
+time.sleep(2)
 
 
 pyautogui.typewrite('git add .')
 pyautogui.press('enter')
-
 time.sleep(2)
+
 pyautogui.typewrite('git commit -m \'')
 
 
@@ -51,11 +51,12 @@ pyautogui.typewrite(str_date_time)
 
 pyautogui.typewrite('\'')
 pyautogui.press('enter')
-
 time.sleep(2)
+
 pyautogui.typewrite('git push')
 pyautogui.press('enter')
-
 time.sleep(2)
+
 pyautogui.typewrite('git pull')
 pyautogui.press('enter')
+time.sleep(2)
