@@ -55,5 +55,6 @@ time.sleep(2)
 pyautogui.typewrite('git push')
 pyautogui.press('enter')
 
+time.sleep(2)
 pyautogui.typewrite('git pull')
 pyautogui.press('enter')
