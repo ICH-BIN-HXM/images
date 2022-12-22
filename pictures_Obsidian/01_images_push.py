@@ -58,7 +58,11 @@ time.sleep(2)
 
 pyautogui.typewrite('git push')
 pyautogui.press('enter')
-time.sleep(2)
+
+coords = pyautogui.locateCenterOnScreen('C:/Users/Xiaomeng Huang/Pictures/Saved Pictures/main_to_main.png',confidence=0.8)
+
+while coords is None:
+    coords = pyautogui.locateCenterOnScreen('C:/Users/Xiaomeng Huang/Pictures/Saved Pictures/main_to_main.png',confidence=0.8)
 
 pyautogui.typewrite('git pull')
 pyautogui.press('enter')
