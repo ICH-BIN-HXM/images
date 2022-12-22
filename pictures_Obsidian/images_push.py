@@ -28,7 +28,7 @@ while coords is None:
 
 pyautogui.typewrite('git pull')
 pyautogui.press('enter')
-time.sleep(2)
+pyautogui.sleep(2)
 
 
 pyautogui.typewrite('git add .')
