@@ -23,6 +23,13 @@ coords = pyautogui.locateCenterOnScreen('C:/Users/Xiaomeng Huang/Pictures/Saved 
 while coords is None:
     coords = pyautogui.locateCenterOnScreen('C:/Users/Xiaomeng Huang/Pictures/Saved Pictures/pictures_obsidian.png',confidence=0.8)
 
+
+
+
+pyautogui.typewrite('git pull')
+pyautogui.press('enter')
+
+
 pyautogui.typewrite('git add .')
 pyautogui.press('enter')
 
@@ -46,4 +53,7 @@ pyautogui.press('enter')
 
 time.sleep(2)
 pyautogui.typewrite('git push')
+pyautogui.press('enter')
+
+pyautogui.typewrite('git pull')
 pyautogui.press('enter')
