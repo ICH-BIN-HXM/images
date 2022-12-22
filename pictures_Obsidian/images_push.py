@@ -28,7 +28,7 @@ pyautogui.press('enter')
 
 time.sleep(2)
 pyautogui.typewrite('git commit -m \'')
-pyautogui.press('enter')
+
 
 # Getting the current date and time
 dt = datetime.now()
