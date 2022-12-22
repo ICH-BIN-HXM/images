@@ -28,7 +28,10 @@ while coords is None:
 
 pyautogui.typewrite('git pull')
 pyautogui.press('enter')
-time.sleep(2)
+coords = pyautogui.locateCenterOnScreen('C:/Users/Xiaomeng Huang/Pictures/Saved Pictures/already_up_to_date.png',confidence=0.8)
+
+while coords is None:
+    coords = pyautogui.locateCenterOnScreen('C:/Users/Xiaomeng Huang/Pictures/Saved Pictures/already_up_to_date.png',confidence=0.8)
 
 
 pyautogui.typewrite('git add .')
