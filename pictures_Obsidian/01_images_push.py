@@ -48,7 +48,7 @@ ts = datetime.timestamp(dt)
 # convert to datetime
 date_time = datetime.fromtimestamp(ts)
 # convert timestamp to string in dd-mm-yyyy HH:MM:SS
-str_date_time = date_time.strftime("%d-%m-%Y_%H-%M-%S")
+str_date_time = date_time.strftime("%Y-%m-%d_%H-%M-%S")
 
 pyautogui.typewrite(str_date_time)
 
